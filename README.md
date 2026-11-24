@@ -1,6 +1,6 @@
 # DriveAssist interaction prototype
 
-README word count: 318 words (excluding headings and commands).
+README word count: 324 words (excluding headings and commands).
 
 This browser prototype demonstrates the assisted-driving interaction developed in Labs 2 and 3. It explores how a driver understands steering resistance and reports a missed obstacle feature. All scenarios and outcomes are scripted.
 
@@ -20,7 +20,7 @@ JavaScript syntax was checked with `node --check`. A simulated DOM check exercis
 
 ## Project files
 
-`Project_Report.html` contains the report and embedded illustrations. `report.md` is its editable source, and `figures/` contains the diagrams.
+`Project_Report.pdf` is the report. `Project_Report.html` contains the same report and embedded illustrations. `report.md` is its editable source, and `figures/` contains the diagrams.
 
 ## AI assistance
 
