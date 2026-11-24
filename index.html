@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DriveAssist | Interaction prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div class="brand">DriveAssist <span>Interaction prototype</span></div><div class="simulation">● SCRIPTED SIMULATION</div></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">DRIVER ASSISTANCE STUDY</p><h1>Understand the intervention.</h1><p>Explore how a driver receives an explanation and reports a missed hazard in two scripted road scenarios.</p></div><div class="notice"><strong>Prototype boundary</strong><br>All road conditions, detections and outcomes are scripted. This interface does not sense or control a vehicle.</div></section>
+    <section class="workspace" aria-label="Scenario simulator">
+      <aside>
+        <p class="eyebrow">CHOOSE A SCENARIO</p>
+        <button class="scenario active" data-scenario="normal" aria-pressed="true"><strong>01 &nbsp; Motorcycle on the right</strong><span>Follow a normal intervention</span></button>
+        <button class="scenario" data-scenario="missed" aria-pressed="false"><strong>02 &nbsp; Missed protrusion</strong><span>Report a perception error</span></button>
+        <div class="legend"><p class="eyebrow">SCENE KEY</p><p><i class="dot car"></i> Your vehicle</p><p><i class="dot hazard"></i> Obstacle</p><p><i class="dot bike"></i> Motorcycle</p></div>
+      </aside>
+      <div class="dashboard">
+        <div class="dashboard-top"><div><p class="eyebrow" id="step-label">SCENARIO 01 · STEP 1</p><h2 id="title"></h2></div><button id="restart" class="text-button">Restart ↺</button></div>
+        <div class="road" role="img" id="road" aria-label="Illustration of a vehicle approaching an obstacle with a motorcycle on the right"><div class="lane-line"></div><div class="road-object obstacle">OBSTACLE</div><div class="road-object motorcycle">MOTORCYCLE</div><div class="road-object vehicle">YOUR CAR <span>↑</span></div><div class="protrusion" id="protrusion">▲ MISSED UPPER PROTRUSION</div></div>
+        <div class="status" aria-live="polite"><div class="status-icon" id="status-icon">i</div><div><p class="eyebrow" id="status-label"></p><h3 id="status-title"></h3><p id="description"></p></div></div>
+        <div class="choices" id="choices"></div>
+        <div class="progress"><span id="progress-text"></span><span>Scripted illustration · No live data</span></div>
+      </div>
+    </section>
+    <section class="explanation"><div><p class="eyebrow">INTERACTION DESIGN</p><h2>A correction triggers a re-check.</h2></div><p>The driver’s report is treated as evidence to investigate. The scripted assistance proceeds around the obstacle only when the selected path is confirmed clear and feasible. If it is not, the simulation continues braking and reports the limitation.</p></section>
+  </main>
+  <footer>DriveAssist · Lab 2 and 3 scenario demonstration <span>Illustrative prototype, not vehicle software</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
