@@ -49,9 +49,11 @@ The scenario assumes that there is time to communicate and reassess. It cannot e
 
 ## Repository
 
-Repository and README: publication pending. The local project includes the README and source files.
+Repository: https://github.com/guanglingsilu/iis-driveassist-a2
 
-Submission commit or release: pending.
+README and development record: https://github.com/guanglingsilu/iis-driveassist-a2/blob/9201f68/README.md
+
+Submitted prototype commit: [9201f68](https://github.com/guanglingsilu/iis-driveassist-a2/commit/9201f68).
 
 ## References
 
